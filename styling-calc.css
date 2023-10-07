@@ -1,0 +1,99 @@
+/* styling-calc.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, td {
+    border: 1px solid #ccc;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    text-align: right;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #00ff00; /* Green text for LCD effect */
+    letter-spacing: 2px; /* Spacing between characters for segmentation */
+    font-family: "Courier New", monospace; /* Monospace font for uniform character width */
+    padding: 5px; /* Additional padding for spacing */
+}
+
+input[type="button"] {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+}
+
+input[type="button"]:hover {
+    background-color: #ddd;
+}
+
+input[type="button"]:active {
+    background-color: #ccc;
+}
+
+/* Operator buttons (e.g., +, -, *, /) */
+input[type="button"][value="+"],
+input[type="button"][value="-"],
+input[type="button"][value="*"],
+input[type="button"][value="/"] {
+    background-color: #ff9900;
+    color: white;
+    border: 1px solid #ff6600;
+}
+
+/* Equals button */
+input[type="button"][value="="] {
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #1e7e34;
+}
+
+/* Clear button */
+input[type="button"][value="C"] {
+    background-color: #dc3545;
+    color: white;
+    border: 1px solid #c82333;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .title {
+        font-size: 20px;
+    }
+
+    input[type="text"] {
+        font-size: 16px;
+        padding: 4px; /* Reduce padding for smaller screens */
+    }
+
+    input[type="button"] {
+        font-size: 14px;
+    }
+}
